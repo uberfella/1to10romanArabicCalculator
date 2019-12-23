@@ -10,14 +10,16 @@ public class EssentialChecks {
         }
     }
     public boolean areArabic (int number) {
-        if (number == 1 || number == 2 || number == 3 || number == 4 || number == 5 || number == 6 || number == 7 || number == 8 || number == 9 || number == 10) {
+        if (number == 1 || number == 2 || number == 3 || number == 4 || number == 5 || 
+                number == 6 || number == 7 || number == 8 || number == 9 || number == 10) {
             return true;
         } else {
             return false;
         }
     }
     public boolean areRoman (String number) {
-        if (number.equals("I") || number.equals("II") || number.equals("III") || number.equals("IV") || number.equals("V") || number.equals("VI") || number.equals("VII") || number.equals("VIII") || number.equals("IX") || number.equals("X")) {
+        if (number.equals("I") || number.equals("II") || number.equals("III") || number.equals("IV") || number.equals("V") 
+                || number.equals("VI") || number.equals("VII") || number.equals("VIII") || number.equals("IX") || number.equals("X")) {
             return true;
         } else {
             return false;
@@ -47,7 +49,7 @@ public class EssentialChecks {
             number = Integer.parseInt(string);
         }
         catch (NumberFormatException e) {
-            
+            //no need to catch anything here, we are sure that input is valid at this point
         }
         return number;
     }
